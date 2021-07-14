@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <title>وبسایت مجتبی پارسا</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- page loader start -->
+    <div class="page-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <!-- page loader end -->
+
+  <!-- background circle start -->
+    <!-- <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div> -->
+  
+  <!-- background circle End -->
+
+
+  <!-- Start Overlay -->
+  <div class="overlay">
+
+  </div>
+  <!-- End Overlay -->
+
+  <!-- Start Main -->
+
+  <div class="main hidden ">
+
+    <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button type="button" class="nav-toggler">
+              <span></span>
+            </button>
+            <nav class="nav">
+              <div class="nav-inner">
+                <ul>
+                  <li><a href="#home" class="nav-item link-item">صفحه نخست</a></li>
+                  <li><a href="#about" class="nav-item link-item">درباره من</a></li>
+                  <li><a href="#portfolio" class="nav-item link-item">نمونه کارها</a></li>
+                  <li><a href="#contact" class="nav-item link-item">ارتباط با من</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <!-- header End -->
+
+    <!-- Start Home Section -->
+    <section class="home-section align-items-center " id="home">
+      <div class="container ">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <p>سلام ، من</p>
+            <h1>مجتبی هستم</h1>
+            <h2>طراح و برنامه نویس وب</h2>
+            <a href="#about" class="btn link-item">درباره من بیشتر بدون</a>
+            <a href="#portfolio" class="btn link-item">نمونه کارها</a>
+          </div>
+          <div class="home-img">
+            <div class="img-box">
+              <img src="img/profile-img.png" alt="profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- About Section Start -->
+    <section class="about-section sec-padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>درباره ی مجتبی</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="img/about-img.png" alt="about-img">
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+            </p>
+            <h3>مهارت ها</h3>
+            <div class="skills">
+              <div class="skill-item">html</div>
+              <div class="skill-item">css</div>
+              <div class="skill-item">javascript</div>
+              <div class="skill-item">bootstrap</div>
+              <div class="skill-item">sass</div>
+              <div class="skill-item">git</div>
+              <div class="skill-item">photoshop</div>
+            </div>
+
+            <div class="about-tabs">
+              <button type="button" class="tab-item active" data-target="#education">تحصیلات</button>
+              <button type="button" class="tab-item" data-target="#experience">سوابق کاری</button>
+            </div>
+            <!-- Education Start -->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+
+                <div class="timeline-item">
+                  <span class="date">1392-1396 </span>
+                  <h4>رشته ی علوم تجربی - <span>دبیرستان دکتر شریعتی</span></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum.</p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="date">اکنون - 1397 </span>
+                  <h4>دانشجوی مهندسی کامپیوتر - <span>دانشگاه آزاد دزفول</span></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum.</p>
+                </div>
+
+                
+
+              </div>
+            </div>
+            <!-- Education End -->
+
+            <!-- Experience Start -->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+
+                <div class="timeline-item">
+                  <span class="date">اکنون - 1399  </span>
+                  <h4>طراح وب - <span>بصورت فریلنسر</span></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum.</p>
+                </div>
+
+              </div>
+              <!-- Experience End -->
+             
+            </div>
+
+            <a href="cv.pdf" target="_blank" class="btn">دانلود رزومه</a>
+            <a href="#contact" class="btn link-item">ارتباط با من</a>
+
+          </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Start Portfolio Section -->
+      <section class="portfolio-section sec-padding " id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>نمونه پروژه های اخیر</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Portfolio item start -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img src="img/portfolio/1.jpg" alt="portfolio1">
+                </div>
+                <h3 class="portfolio-item-title">
+                  وبسایت آموزشی
+                </h3>
+                <button type="button" class="btn view-project-btn">نمایش پروژه</button>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt distinctio hic amet dicta veritatis at, quaerat saepe eius praesentium.</p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>ساخته شده در - <span>خرداد 1399</span></li>
+                      <li>تکنولوژی های استفاده شده - <span>HTMl , CSS</span></li>
+                      <li>نقش - <span>Front-End</span></li>
+                      <li>مشاهده آنلاین - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            <!-- Portfolio item End -->
+
+             <!-- Portfolio item start -->
+             <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/portfolio/2.jpg" alt="portfolio1">
+              </div>
+              <h3 class="portfolio-item-title">
+                Personal Portfolio Website
+              </h3>
+              <button type="button" class="btn view-project-btn">نمایش پروژه</button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt distinctio hic amet dicta veritatis at, quaerat saepe eius praesentium.</p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Created - <span>4 Dec 2020</span></li>
+                    <li>Technologies used - <span>HTMl , CSS</span></li>
+                     <li>Role - <span>Front-End</span></li>
+                    <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <!-- Portfolio item End -->
+
+           <!-- Portfolio item start -->
+           <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/3.jpg" alt="portfolio1">
+            </div>
+            <h3 class="portfolio-item-title">
+              app landing page
+            </h3>
+            <button type="button" class="btn view-project-btn">نمایش پروژه</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt distinctio hic amet dicta veritatis at, quaerat saepe eius praesentium.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>4 Dec 2020</span></li>
+                  <li>Technologies used - <span>HTMl , CSS</span></li>
+                  <li>Technologies used - <span>HTMl , CSS</span></li>
+                  <li>Role - <span>Front-End</span></li>
+                  <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <!-- Portfolio item End -->
+
+         <!-- Portfolio item start -->
+         <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/4.jpg" alt="portfolio1">
+          </div>
+          <h3 class="portfolio-item-title">
+            education course website
+          </h3>
+          <button type="button" class="btn view-project-btn">نمایش پروژه</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt distinctio hic amet dicta veritatis at, quaerat saepe eius praesentium.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Created - <span>4 Dec 2020</span></li>
+                <li>Technologies used - <span>HTMl , CSS</span></li>
+                <li>Technologies used - <span>HTMl , CSS</span></li>
+                <li>Role - <span>Front-End</span></li>
+                <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!-- Portfolio item End -->
+
+       <!-- Portfolio item start -->
+       <div class="portfolio-item">
+        <div class="portfolio-item-thumbnail">
+          <img src="img/portfolio/5.jpg" alt="portfolio1">
+        </div>
+        <h3 class="portfolio-item-title">
+          education course website
+        </h3>
+        <button type="button" class="btn view-project-btn">نمایش پروژه</button>
+        <div class="portfolio-item-details">
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt distinctio hic amet dicta veritatis at, quaerat saepe eius praesentium.</p>
+          </div>
+          <div class="general-info">
+            <ul>
+              <li>Created - <span>4 Dec 2020</span></li>
+              <li>Technologies used - <span>HTMl , CSS</span></li>
+              <li>Technologies used - <span>HTMl , CSS</span></li>
+              <li>Role - <span>Front-End</span></li>
+              <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- Portfolio item End -->
+
+     <!-- Portfolio item start -->
+     <div class="portfolio-item">
+      <div class="portfolio-item-thumbnail">
+        <img src="img/portfolio/6.jpg" alt="portfolio1">
+      </div>
+      <h3 class="portfolio-item-title">
+        Last Proj
+      </h3>
+      <button type="button" class="btn view-project-btn">نمایش پروژه</button>
+      <div class="portfolio-item-details">
+        <div class="description">
+          <p>mojLorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt distinctio hic amet dicta veritatis at, quaerat saepe eius praesentium.</p>
+        </div>
+        <div class="general-info">
+          <ul>
+            <li>Created - <span>4 Dec 2020</span></li>
+            <li>Technologies used - <span>HTMl , CSS</span></li>
+            <li>Technologies used - <span>HTMl , CSS</span></li>
+            <li>Role - <span>Front-End</span></li>
+            <li>view online - <span><a href="#" target="_blank">www.moj.com</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <!-- Portfolio item End -->
+
+          </div>
+        </div>
+      </section>
+    <!-- End Portfolio Section -->
+
+    <!-- Contact Section Start -->
+      <section class="contact-section sec-padding " id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>ارتباط با من</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="input-group">
+                    <input type="text" placeholder="نام" class="input-control" required>
+                  </div>
+                  <div class="input-group">
+                    <input type="email" placeholder="ایمیل" class="input-control" required>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" placeholder="موضوع" class="input-control" required>
+                  </div>
+                  <div class="input-group">
+                   <textarea placeholder="متن پیام ..." class="input-control"></textarea>
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit" class="btn">ارسال پیام</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3>ایمیل</h3>
+                <p>mojtabapaarsa@gmail.com</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>شماره موبابل</h3>
+                <p>09390471218</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>من رو دنبال کنید</h3>
+                <div class="social-links">
+                  <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Contact Section End -->
+  </div>
+  <!-- End Main -->
+
+  <!-- Portfolio item popup start -->
+    <div class="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+            <div class="pp-thumbnail">
+              <img src="img/portfolio/3.jpg" alt="Portfolio img popup">
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp-body">
+            <div class="description">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt distinctio hic amet dicta veritatis at, quaerat saepe eius praesentium.</p>
+            </div>
+            <div class="general-info">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Portfolio item popup End -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
