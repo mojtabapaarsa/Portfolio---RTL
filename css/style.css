@@ -23,8 +23,28 @@
   --white-alpha-40: rgba(255, 255, 255, 0.4);
   --white-alpha-25: rgba(255, 255, 255, 0.25);
   --backdrop-filter-blur: blur(5px);
+  --home-text-color: #18293c;
+  --toggler-color: #e02f6b;
+  --scroll-color: #e02f6b;
+  --nav-color: #18293c;
+  --nav-color-hover: var(--main-color);
+  --text-color: #18293c;
+  --dot-color: #e02f6b;
+  --date-color: #e02f6b;
 }
-
+.dark-theme {
+  --main-color: #18293c;
+  --pink-light: #202f41;
+  --cyan-light: #202831;
+  --home-text-color: #fff;
+  --toggler-color: #e2e2e2;
+  --scroll-color: #e02f6b;
+  --nav-color: #fff;
+  --nav-color-hover: rgb(241, 241, 241);
+  --text-color: #fff;
+  --dot-color: #fff;
+  --date-color: #fffb00;
+}
 /* ------------------------ Global Settings ----------------------  */
 * {
   box-sizing: border-box;
@@ -75,6 +95,22 @@ body::before {
   z-index: -1;
   opacity: 0.12;
 }
+.darkmode {
+  background-color: #000;
+}
+#icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 363244654;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+.nav.active #icon {
+  right: 40px;
+  top: 30px;
+}
 h1,
 h2 {
   font-weight: 600;
@@ -116,6 +152,7 @@ section.fade-out {
 .container {
   padding: 0 40px;
   width: 100%;
+  position: relative;
 }
 .row {
   display: flex;
@@ -138,6 +175,7 @@ section.fade-out {
 .section-title h2 {
   font-size: 40px;
   text-transform: capitalize;
+  color: var(--text-color);
 }
 .sec-padding {
   padding: 80px 0;
@@ -147,13 +185,13 @@ section.fade-out {
 }
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background-color: var(--white);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+  background-color: var(--scroll-color);
 }
 /* Buttons */
 button {
@@ -358,6 +396,7 @@ button {
   margin: auto;
 }
 .header .nav-toggler {
+  color: var(--toggler-color);
   width: 50px;
   height: 50px;
   border: none;
@@ -379,7 +418,7 @@ button {
 .header .nav-toggler span {
   height: 2px;
   width: 25px;
-  background-color: var(--main-color);
+  background-color: var(--toggler-color);
   position: relative;
   transition: background-color 0.3s ease;
 }
@@ -393,7 +432,7 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--main-color);
+  background-color: var(--toggler-color);
   transition: all 0.3s ease;
 }
 .header .nav-toggler span::before {
@@ -451,7 +490,7 @@ button {
 .header .nav-inner ul li a {
   font-size: 40px;
   text-transform: capitalize;
-  color: var(--blue-dark);
+  color: var(--nav-color);
   display: block;
   font-weight: 500;
   padding: 8px 15px;
@@ -473,7 +512,7 @@ button {
   width: 100%;
 }
 .header .nav-inner ul li a:hover {
-  color: var(--main-color);
+  color: var(--nav-color-hover);
 }
 /* ------------- HOME SECTION -------------  */
 .home-section {
@@ -484,6 +523,7 @@ button {
   display: flex;
 }
 .home-text {
+  color: var(--home-text-color);
 }
 .home-text p {
   font-size: 18px;
@@ -500,6 +540,10 @@ button {
 }
 .home-text .btn {
   margin: 0 0 15px 10px;
+  color: var(--dot-color);
+}
+.home-text .btn:hover {
+  color: #fff;
 }
 .home-img {
 }
@@ -521,6 +565,9 @@ button {
 }
 
 /* About Section */
+.about-section {
+  color: var(--text-color);
+}
 .about-img {
   width: 40%;
   padding: 0 15px;
@@ -545,6 +592,7 @@ button {
   text-transform: capitalize;
   font-size: 20px;
   margin: 20px 0;
+  color: var(--text-color);
 }
 .about-text .skills {
   display: flex;
@@ -560,7 +608,7 @@ button {
   border-radius: 20px;
 }
 
-.about-tabs {
+.about-tabs button {
   margin-top: 20px;
 }
 .about-tabs .tab-item {
@@ -569,11 +617,11 @@ button {
   border: none;
   text-transform: capitalize;
   display: inline-block;
-  color: var(--blue-dark);
+  color: var(--text-color);
   font-size: 20px;
   cursor: pointer;
   font-weight: 500;
-  margin: 0 0 0 30px;
+  margin: 20px 0 0 30px;
   position: relative;
   opacity: 0.5;
   transition: all 0.3s ease;
@@ -588,7 +636,7 @@ button {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: var(--blue-dark);
+  background-color: var(--text-color);
   transition: width 0.3s ease;
 }
 .about-tabs .tab-item:hover::before {
@@ -613,7 +661,7 @@ button {
   width: 1px;
   top: 0;
   right: 5px;
-  background-color: var(--main-color);
+  background-color: var(--text-color);
 }
 .about-text .tab-content {
   padding: 40px 0;
@@ -632,7 +680,7 @@ button {
   position: absolute;
   height: 11px;
   width: 11px;
-  background-color: var(--main-color);
+  background-color: var(--dot-color);
   right: 0;
   top: 21px;
   border-radius: 50%;
@@ -642,8 +690,8 @@ button {
 }
 .about-text .timeline-item .date {
   display: block;
-  color: var(--main-color);
-  font-weight: 400;
+  color: var(--date-color);
+  font-weight: lighter;
   margin: 0 0 10px;
 }
 .about-text .timeline-item h4 {
@@ -657,12 +705,17 @@ button {
 
 .about-text .btn {
   margin: 0 0 15px 15px;
+  color: var(--dot-color);
 }
-
-/* -------------- Portfolio Sectiob -------------- */
+.about-text .btn:hover {
+  color: var(--white);
+}
+/* -------------- Portfolio Section -------------- */
 .portfoio-section {
   padding-bottom: 50px;
+  color: var(--text-color);
 }
+
 .portfolio-item {
   width: calc((100% / 3) - 30px);
   margin: 0 15px 30px;
@@ -679,13 +732,17 @@ button {
 }
 .portfolio-item-details {
   display: none;
+  color: var(--text-color);
 }
 .portfolio-item h3 {
   font-size: 20px;
   text-transform: capitalize;
   margin: 20px 0;
+  color: var(--text-color);
 }
-
+.view-project-btn {
+  color: var(--text-color);
+}
 /* -------- Portfolio Popup ------- */
 .portfolio-popup {
   position: fixed;
@@ -745,24 +802,36 @@ button {
   font-size: 20px;
   text-transform: capitalize;
   margin: 20px 0 15px;
+  color: var(--text-color);
 }
 .pp-body .description {
   margin-bottom: 20px;
+  color: var(--text-color);
+}
+.pp-body .description p {
+  font-weight: lighter;
+  font-size: 14px;
+  color: var(--text-color);
 }
 .pp-body .general-info li {
   margin-bottom: 10px;
   font-weight: 500;
   text-transform: capitalize;
+  color: var(--text-color);
 }
 .pp-body .general-info li span {
   font-weight: 300;
 }
 .pp-body .general-info li a {
   text-transform: lowercase;
-  color: var(--main-color);
+  color: var(--dot-color);
 }
 
 /* ------- Contact section ----------- */
+.contact-section {
+  color: var(--text-color);
+  font-weight: 300;
+}
 
 .contact-form,
 .contact-info {
@@ -783,14 +852,14 @@ button {
   font-weight: 400;
   font-size: 16px;
   padding: 0 20px;
-  color: var(--blue-dark);
+  color: var(--text-color);
   background-color: var(--white-alpha-25);
   border: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
 
 .contact-form .input-control::placeholder {
-  color: var(--blue-dark);
+  color: var(--text-color);
   opacity: 0.8;
   font-weight: 300;
 }
@@ -802,9 +871,15 @@ button {
   resize: none;
   padding-top: 15px;
 }
+.contact-btn {
+  color: var(--text-color);
+}
 .contact-info-item {
   margin: 0 0 30px;
   padding: 0 0 0 20px;
+}
+.contact-info-item a {
+  color: var(--text-color);
 }
 .contact-info-item h3 {
   font-size: 20px;

@@ -1,3 +1,5 @@
+
+
 window.addEventListener('load' , ()=>{
    document.querySelector('.main').classList.remove('hidden');
    document.querySelector('.home-section').classList.add('active');
@@ -95,4 +97,14 @@ const tabsContainer=document.querySelector('.about-tabs'),
          portfolioItem.querySelector('.portfolio-item-details').innerHTML;
       }
 
-     
+   //   DARK MODE
+   let icon=document.querySelector('#icon');
+   icon.onclick=function () {
+      document.body.classList.toggle('dark-theme');
+      if(document.body.classList.contains('dark-theme')){
+         icon.src="../img/icons8-sun-48.png";
+         icon.style.color='white';
+      }else{
+         icon.src="../img/moon-solid.svg"
+      }
+   }
